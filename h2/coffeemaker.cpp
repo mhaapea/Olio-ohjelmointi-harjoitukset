@@ -7,10 +7,12 @@ CoffeeMaker::CoffeeMaker(float vt, float pm) {
 
 void CoffeeMaker::start() {
     tila = true;
+    cout << "Kone käynnistetty" << endl;
 }
 
 void CoffeeMaker::stop() {
     tila = false;
+    cout << "Kone sammutettu" << endl;
 }
 
 void CoffeeMaker::lisaaVetta(float vm) {

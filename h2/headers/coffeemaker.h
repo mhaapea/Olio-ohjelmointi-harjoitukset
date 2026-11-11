@@ -5,9 +5,9 @@ using namespace std;
 
 class CoffeeMaker {
 private:
-    float v_tilavuus = 10;
+    float v_tilavuus;
     float v_maara = 0;
-    float papu_max = 50;
+    float papu_max;
     float papu_maara = 0;
     int valmistetut = 0;
     bool tila = false;
