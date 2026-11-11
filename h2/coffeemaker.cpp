@@ -32,6 +32,9 @@ void CoffeeMaker::lisaaPapuja(float pm) {
 void CoffeeMaker::makeCoffee() {
     if (tila==true && v_maara > 2 && papu_maara > 1) {
         cout << "Kahvi valmistuu pian" << endl;
+        valmistetut++;
+        v_maara -= 2;
+        papu_maara -= 1;
     } else {
         cout << "Tarkista että kone on päällä ja tarvikkeita tarpeeksi" << endl;
     }
@@ -40,4 +43,13 @@ void CoffeeMaker::makeCoffee() {
 void CoffeeMaker::showStatus() {
     cout << "Vettä: " << v_maara << endl;
     cout << "Papuja: " << papu_maara << endl;
+    if(tila==false) {
+        cout << "Kone on pois päältä" << endl;
+    } else {
+        cout << "Kone on päällä" << endl;
+    }
+}
+
+void CoffeeMaker::showMade() {
+    cout << "Valmistettuja kuppeja: " << valmistetut << endl;
 }

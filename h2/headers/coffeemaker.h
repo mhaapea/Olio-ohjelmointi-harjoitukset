@@ -9,6 +9,7 @@ private:
     float v_maara = 0;
     float papu_max = 50;
     float papu_maara = 0;
+    int valmistetut = 0;
     bool tila = false;
 
 public:
@@ -18,6 +19,8 @@ public:
     void lisaaVetta(float vm);
     void lisaaPapuja(float pm);
     void makeCoffee();
+    void showStatus();
+    void showMade();
 };
 
 #endif // COFFEEMAKER_H
